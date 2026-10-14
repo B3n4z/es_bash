@@ -4,15 +4,13 @@ echo "metti il numero: "
 read num
 
 somma=0
-pos=0
-for (( i=${#num}-1; i>=0; i-- )); do
-    if (( pos % 2 == 0 )); then
+for (( i=0; i<${#num}; i++ )); do
+    if (( $i % 2 == 0 )); then
         mol=$(( 1 * ${num:$i:1} ))
     else
         mol=$(( 3 * ${num:$i:1} ))
     fi
     somma=$(( somma + mol ))
-    pos=$(( pos + 1 ))
 done
 
 decina=$(( (somma + 9) / 10 * 10 ))

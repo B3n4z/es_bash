@@ -58,7 +58,7 @@ echo -n "$ris"
 
 while true; do 
     read ope2
-    
+
     if [[ ! $ope2 =~ ^[-+*/][0-9]+$ ]]; then
         echo "Operazione non valida"
         exit 1

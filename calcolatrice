@@ -1,0 +1,24 @@
+#!/bin/zsh
+
+echo "metti il primo valore: "
+read val1
+echo "metti l'operatore: "
+read ope
+echo "metti il secondo valore: "
+read val2
+
+
+if [[ $ope == "+" ]]; then
+    ris=$((val1 + val2))
+elif [[ $ope == "-" ]]; then
+    ris=$((val1 - val2))
+elif [[ $ope == "*" ]]; then
+    ris=$((val1 * val2))
+elif [[ $ope == "/" ]]; then
+    ris=$((val1 / val2))
+else
+    echo "opzione non valida"
+    exit 1
+fi
+
+echo "risualtato: $ris"

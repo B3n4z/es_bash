@@ -1,0 +1,4 @@
+path,size_bytes
+test.txt,58
+palla.txt,19
+CIAO.txt,16
